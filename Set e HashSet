@@ -1,0 +1,19 @@
+import java.util.HashSet;
+import java.util.Set;
+public class Colecoes {
+	public static void main(String[] args) {
+		Set<String> textos = new HashSet<>();
+		textos.add("texto 1");
+		textos.add("texto 2");
+		System.out.println(textos.size()); // imprime 2
+		Iterator<String> iterador = textos.iterator();
+		while (iterador.hasNext()) {
+			String elemento = iterador.next();
+			System.out.println(elemento);	
+		}
+		textos.contains("texto 2"); // retorna true
+		textos.remove("texto 1");
+		System.out.println(textos.size()); // imprime 1
+	}
+}
+
